@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>NORD* — барбершоп, Алматы</title>
+    <meta name="description" content="NORD*: стрижки, fade, борода и королевское бритьё. Алматы, пр. Абая 52. Ежедневно 10:00–22:00." />
+    <meta name="theme-color" content="#E8E6E1" />
+    <meta property="og:title" content="NORD* — барбершоп, Алматы" />
+    <meta property="og:description" content="NORD*: стрижки, fade, борода и королевское бритьё. Алматы, пр. Абая 52. Ежедневно 10:00–22:00." />
+    <meta property="og:image" content="assets/hero-mirror-1920.webp" />
+    <style>:root{--paper:#e8e6e1;--ink:#0b0b0b;--accent:#9e2236;--accent-hi:#c9415a;--mark:#9e2236}</style>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      /* Режимы ставятся до первой отрисовки, чтобы не было мигания.
+         is-lite — статичная версия (нет WebGL2, слабое устройство, in-app браузер Instagram/Facebook).
+         is-reduced — пользователь попросил меньше движения. */
+      (function () {
+        var d = document.documentElement, ua = navigator.userAgent || '';
+        d.classList.add('js');
+        var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var inApp = /Instagram|FBAN|FBAV|FB_IAB/i.test(ua);
+        var c = navigator.connection || {};
+        var weak = (navigator.deviceMemory && navigator.deviceMemory < 4) ||
+                   (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) ||
+                   c.saveData === true;
+        var gl = false;
+        try { gl = !!document.createElement('canvas').getContext('webgl2'); } catch (e) {}
+        if (/[?&]lite\b/.test(location.search)) weak = true;
+        if (reduced) d.classList.add('is-reduced');
+        if (inApp || weak || !gl) d.classList.add('is-lite');
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-DxrAKRU4.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CWq033tF.css">
+  </head>
+  <body>
+    
+<a class="skip" href="#booking">Перейти к записи</a>
+<header class="topbar">
+  <a class="topbar__logo" href="#top" aria-label="NORD* — наверх">NORD<span class="star">*</span></a>
+  <nav class="topbar__nav" aria-label="Разделы">
+    <a href="#razor" class="topbar__link"><span class="mono">0.5</span><span>Бритьё</span></a>
+    <a href="#services" class="topbar__link"><span class="mono">1</span><span>Услуги</span></a>
+    <a href="#barbers" class="topbar__link"><span class="mono">2</span><span>Барберы</span></a>
+    <a href="#booking" class="topbar__link"><span class="mono">3</span><span>Запись</span></a>
+  </nav>
+  <p class="topbar__meta micro"><span>Алматы</span><span class="mono">10:00–22:00</span></p>
+</header>
+<a class="cta-top btn btn--accent" href="#booking" data-book>Записаться</a>
+<main>
+
+<section class="hero" id="top" aria-label="NORD*">
+  <div class="hero__mirror" data-focus="0.45,0.42">
+    <picture>
+      <source media="(max-width: 767px)" srcset="assets/hero-mirror-900.webp" />
+      <img class="hero__img" src="assets/hero-mirror-1920.webp" alt="Портрет мужчины в чёрной футболке на тёмном фоне" style="object-position:45% 42%" fetchpriority="high" decoding="async" />
+    </picture>
+    <div class="hero__veil" aria-hidden="true"></div>
+  </div>
+  <div class="hero__ui">
+    <div class="hero__spec">
+      <p class="micro mono">(NRD.01 — 2026)</p>
+      <p class="micro">Барбершоп / Алматы</p>
+    </div>
+    <p class="hero__lead" data-reveal="lines">Горячее полотенце, опасная бритва и точный fade. Без суеты и очередей — только ремесло и час, который принадлежит вам.</p>
+    <p class="hero__hint micro"><span class="hero__hint-dot" aria-hidden="true"></span>(Проведите по зеркалу)</p>
+    <div class="hero__bottom">
+      <p class="hero__tagline" data-reveal="lines">Чистая линия —<br>с первого прохода.</p>
+      <p class="hero__coords micro mono">43.2389° N — 76.8897° E</p>
+    </div>
+    <h1 class="hero__wordmark wordmark" aria-label="NORD*"><span aria-hidden="true">NORD<span class="star">*</span></span></h1>
+  </div>
+</section>
+<div class="dither dither--paper-ink" data-from="paper" data-to="ink" aria-hidden="true"><canvas></canvas></div>
+
+<section class="razor" id="razor" aria-label="Один проход.">
+  <div class="razor__stage">
+    <div class="razor__gl" aria-hidden="true"></div>
+    <img class="razor__still" src="assets/razor-straight.webp" alt="Опасная бритва" loading="lazy" decoding="async" />
+    <div class="razor__head">
+      <p class="guard micro"><span class="guard__mm mono">0.5&nbsp;мм</span><span class="guard__label">Бритьё</span></p>
+      <h2 class="razor__title display">Один проход.</h2>
+    </div>
+    <ol class="razor__chapters">
+      <li class="chapter" data-i="0">
+        <h3 class="chapter__title"><span class="chapter__num mono">01&nbsp;—</span> СТАЛЬ</h3>
+        <p class="chapter__text">Опасная бритва из углеродистой стали. Её держат в руке так же, как сто лет назад.</p>
+        <dl class="specs">
+          <div class="specs__row"><dt>Сталь</dt><dd class="mono">C 1.2 %</dd></div>
+          <div class="specs__row"><dt>Твёрдость</dt><dd class="mono">61 HRC</dd></div>
+          <div class="specs__row"><dt>Клинок</dt><dd class="mono">6/8″</dd></div>
+        </dl>
+      </li>
+      <li class="chapter" data-i="1">
+        <h3 class="chapter__title"><span class="chapter__num mono">02&nbsp;—</span> ТОЧНОСТЬ</h3>
+        <p class="chapter__text">Угол к коже — 30°. Один проход по росту волос, второй — против. Ни одного лишнего.</p>
+        <dl class="specs">
+          <div class="specs__row"><dt>Угол</dt><dd class="mono">30°</dd></div>
+          <div class="specs__row"><dt>Проходов</dt><dd class="mono">2</dd></div>
+          <div class="specs__row"><dt>Контур</dt><dd class="mono">0.1 мм</dd></div>
+        </dl>
+      </li>
+      <li class="chapter" data-i="2">
+        <h3 class="chapter__title"><span class="chapter__num mono">03&nbsp;—</span> РИТУАЛ</h3>
+        <p class="chapter__text">Горячее полотенце раскрывает поры, пена смягчает щетину, холодный компресс закрывает.</p>
+        <dl class="specs">
+          <div class="specs__row"><dt>Полотенце</dt><dd class="mono">60 °C</dd></div>
+          <div class="specs__row"><dt>Пена</dt><dd class="mono">вручную</dd></div>
+          <div class="specs__row"><dt>Время</dt><dd class="mono">45 мин</dd></div>
+        </dl>
+      </li>
+      <li class="chapter" data-i="3">
+        <h3 class="chapter__title"><span class="chapter__num mono">04&nbsp;—</span> ГИГИЕНА</h3>
+        <p class="chapter__text">Новое лезвие для каждого гостя. Инструмент — после сухожара, полотенца — одноразовые.</p>
+        <dl class="specs">
+          <div class="specs__row"><dt>Лезвие</dt><dd class="mono">новое</dd></div>
+          <div class="specs__row"><dt>Сухожар</dt><dd class="mono">180 °C</dd></div>
+          <div class="specs__row"><dt>Полотенца</dt><dd class="mono">1 гость</dd></div>
+        </dl>
+      </li>
+    </ol>
+    <div class="razor__progress micro mono" aria-hidden="true">
+      <span class="razor__count">01</span><span class="razor__bar"><i></i></span><span>04</span>
+    </div>
+  </div>
+</section>
+<div class="dither dither--ink-paper" data-from="ink" data-to="paper" aria-hidden="true"><canvas></canvas></div>
+
+<section class="services section" id="services" aria-labelledby="services-title">
+  <header class="sec-head">
+    <p class="guard micro"><span class="guard__mm mono">1&nbsp;мм</span><span class="guard__label">Услуги</span></p>
+    <h2 class="display" id="services-title" data-reveal="lines">Услуги<br>и цены</h2>
+    <p class="sec-head__note" data-reveal="lines">Цены в тенге. Время — ориентир: мастер не торопится, если нужно ещё десять минут.</p>
+  </header>
+  <ul class="svc-list">
+    <li class="svc-list__item"><a class="svc" href="#booking" data-book data-service="haircut" data-image="assets/service-haircut.webp">
+      <span class="svc__idx mono">01</span>
+      <span class="svc__name">Мужская стрижка</span>
+      <span class="svc__note">Ножницы и машинка, мытьё, укладка</span>
+      <span class="svc__time mono">60&nbsp;мин</span>
+      <span class="svc__price mono">7 000 ₸</span>
+      <span class="svc__go micro">Записаться<span aria-hidden="true"> →</span></span>
+    </a></li>
+    <li class="svc-list__item"><a class="svc" href="#booking" data-book data-service="fade" data-image="assets/service-fade.webp">
+      <span class="svc__idx mono">02</span>
+      <span class="svc__name">Fade</span>
+      <span class="svc__note">Плавный переход от 0 мм</span>
+      <span class="svc__time mono">60&nbsp;мин</span>
+      <span class="svc__price mono">8 000 ₸</span>
+      <span class="svc__go micro">Записаться<span aria-hidden="true"> →</span></span>
+    </a></li>
+    <li class="svc-list__item"><a class="svc" href="#booking" data-book data-service="clipper" data-image="assets/service-clipper.webp">
+      <span class="svc__idx mono">03</span>
+      <span class="svc__name">Стрижка машинкой</span>
+      <span class="svc__note">Одна или две насадки</span>
+      <span class="svc__time mono">30&nbsp;мин</span>
+      <span class="svc__price mono">4 500 ₸</span>
+      <span class="svc__go micro">Записаться<span aria-hidden="true"> →</span></span>
+    </a></li>
+    <li class="svc-list__item"><a class="svc" href="#booking" data-book data-service="beard" data-image="assets/service-beard.webp">
+      <span class="svc__idx mono">04</span>
+      <span class="svc__name">Борода</span>
+      <span class="svc__note">Форма, контур, уход маслом</span>
+      <span class="svc__time mono">30&nbsp;мин</span>
+      <span class="svc__price mono">5 000 ₸</span>
+      <span class="svc__go micro">Записаться<span aria-hidden="true"> →</span></span>
+    </a></li>
+    <li class="svc-list__item"><a class="svc" href="#booking" data-book data-service="royal-shave" data-image="assets/service-royal-shave.webp">
+      <span class="svc__idx mono">05</span>
+      <span class="svc__name">Королевское бритьё</span>
+      <span class="svc__note">Горячее полотенце и опасная бритва</span>
+      <span class="svc__time mono">45&nbsp;мин</span>
+      <span class="svc__price mono">6 500 ₸</span>
+      <span class="svc__go micro">Записаться<span aria-hidden="true"> →</span></span>
+    </a></li>
+    <li class="svc-list__item"><a class="svc" href="#booking" data-book data-service="haircut-beard" data-image="assets/service-haircut-beard.webp">
+      <span class="svc__idx mono">06</span>
+      <span class="svc__name">Стрижка + борода</span>
+      <span class="svc__note">Полный образ за один визит</span>
+      <span class="svc__time mono">90&nbsp;мин</span>
+      <span class="svc__price mono">11 000 ₸</span>
+      <span class="svc__go micro">Записаться<span aria-hidden="true"> →</span></span>
+    </a></li>
+  </ul>
+  <div class="svc-follow" aria-hidden="true"><img src="assets/service-haircut.webp" data-for="haircut" alt="" loading="lazy" decoding="async" /><img src="assets/service-fade.webp" data-for="fade" alt="" loading="lazy" decoding="async" /><img src="assets/service-clipper.webp" data-for="clipper" alt="" loading="lazy" decoding="async" /><img src="assets/service-beard.webp" data-for="beard" alt="" loading="lazy" decoding="async" /><img src="assets/service-royal-shave.webp" data-for="royal-shave" alt="" loading="lazy" decoding="async" /><img src="assets/service-haircut-beard.webp" data-for="haircut-beard" alt="" loading="lazy" decoding="async" /></div>
+</section>
+
+<section class="barbers section" id="barbers" aria-labelledby="barbers-title">
+  <header class="sec-head">
+    <p class="guard micro"><span class="guard__mm mono">2&nbsp;мм</span><span class="guard__label">Барберы</span></p>
+    <h2 class="display" id="barbers-title" data-reveal="lines">Четыре пары<br>рук.</h2>
+    <p class="sec-head__note" data-reveal="lines">У каждого своя специализация. Не знаете, к кому, — выберите «Любой свободный».</p>
+  </header>
+  <ul class="barber-grid">
+    <li class="barber" data-reveal="rise">
+      <a class="barber__link" href="#booking" data-book data-barber="arman" aria-label="Записаться к мастеру Арман">
+        <span class="barber__photo"><img src="assets/barber-arman.webp" alt="Арман, топ-барбер" loading="lazy" decoding="async" width="800" height="1000" /></span>
+        <span class="barber__meta">
+          <span class="barber__idx micro mono">(2.1)</span>
+          <span class="barber__name">Арман</span>
+          <span class="barber__role micro">Топ-барбер</span>
+          <span class="barber__years micro mono">9 лет в профессии</span>
+        </span>
+      </a>
+    </li>
+    <li class="barber" data-reveal="rise">
+      <a class="barber__link" href="#booking" data-book data-barber="daniyar" aria-label="Записаться к мастеру Данияр">
+        <span class="barber__photo"><img src="assets/barber-daniyar.webp" alt="Данияр, fade" loading="lazy" decoding="async" width="800" height="1000" /></span>
+        <span class="barber__meta">
+          <span class="barber__idx micro mono">(2.2)</span>
+          <span class="barber__name">Данияр</span>
+          <span class="barber__role micro">Fade</span>
+          <span class="barber__years micro mono">6 лет в профессии</span>
+        </span>
+      </a>
+    </li>
+    <li class="barber" data-reveal="rise">
+      <a class="barber__link" href="#booking" data-book data-barber="timur" aria-label="Записаться к мастеру Тимур">
+        <span class="barber__photo"><img src="assets/barber-timur.webp" alt="Тимур, борода и бритьё" loading="lazy" decoding="async" width="800" height="1000" /></span>
+        <span class="barber__meta">
+          <span class="barber__idx micro mono">(2.3)</span>
+          <span class="barber__name">Тимур</span>
+          <span class="barber__role micro">Борода и бритьё</span>
+          <span class="barber__years micro mono">7 лет в профессии</span>
+        </span>
+      </a>
+    </li>
+    <li class="barber" data-reveal="rise">
+      <a class="barber__link" href="#booking" data-book data-barber="erlan" aria-label="Записаться к мастеру Ерлан">
+        <span class="barber__photo"><img src="assets/barber-erlan.webp" alt="Ерлан, барбер" loading="lazy" decoding="async" width="800" height="1000" /></span>
+        <span class="barber__meta">
+          <span class="barber__idx micro mono">(2.4)</span>
+          <span class="barber__name">Ерлан</span>
+          <span class="barber__role micro">Барбер</span>
+          <span class="barber__years micro mono">3 года в профессии</span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</section>
+<div class="dither dither--paper-ink" data-from="paper" data-to="ink" aria-hidden="true"><canvas></canvas></div>
+
+<section class="booking section" id="booking" aria-labelledby="booking-title">
+  <div class="booking__intro">
+    <p class="guard micro"><span class="guard__mm mono">3&nbsp;мм</span><span class="guard__label">Запись</span></p>
+    <h2 class="display" id="booking-title" data-reveal="lines">Займите<br>кресло.</h2>
+    <p class="booking__lead" data-reveal="lines">Оставьте контакты — форма откроет WhatsApp с готовым сообщением. Подтвердим время в течение 15 минут.</p>
+    <dl class="booking__facts micro">
+      <div><dt>Адрес</dt><dd>Алматы, пр. Абая 52</dd></div>
+      <div><dt>Часы</dt><dd class="mono">Ежедневно 10:00–22:00</dd></div>
+      <div><dt>Телефон</dt><dd class="mono"><a href="tel:+77000000000">+7 700 000 00 00</a></dd></div>
+    </dl>
+  </div>
+  <form class="form" id="booking-form" novalidate>
+    <div class="field">
+      <label class="field__label micro" for="f-name"><span class="mono">01</span> Имя</label>
+      <input class="field__input" id="f-name" name="name" type="text" autocomplete="given-name" placeholder="Как к вам обращаться" required maxlength="60" />
+    </div>
+    <div class="field">
+      <label class="field__label micro" for="f-phone"><span class="mono">02</span> Телефон</label>
+      <input class="field__input mono" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 ___ ___ __ __" required />
+    </div>
+    <div class="field field--select">
+      <label class="field__label micro" for="f-service"><span class="mono">03</span> Услуга</label>
+      <select class="field__input" id="f-service" name="service">
+        <option value="haircut">Мужская стрижка — 7 000 ₸</option>
+        <option value="fade">Fade — 8 000 ₸</option>
+        <option value="clipper">Стрижка машинкой — 4 500 ₸</option>
+        <option value="beard">Борода — 5 000 ₸</option>
+        <option value="royal-shave">Королевское бритьё — 6 500 ₸</option>
+        <option value="haircut-beard">Стрижка + борода — 11 000 ₸</option>
+      </select>
+    </div>
+    <div class="field field--select">
+      <label class="field__label micro" for="f-barber"><span class="mono">04</span> Барбер</label>
+      <select class="field__input" id="f-barber" name="barber">
+        <option value="">Любой свободный</option>
+        <option value="arman">Арман — топ-барбер</option>
+        <option value="daniyar">Данияр — fade</option>
+        <option value="timur">Тимур — борода и бритьё</option>
+        <option value="erlan">Ерлан — барбер</option>
+      </select>
+    </div>
+    <div class="field">
+      <label class="field__label micro" for="f-date"><span class="mono">05</span> Дата</label>
+      <input class="field__input mono" id="f-date" name="date" type="date" required />
+    </div>
+    <div class="form__foot">
+      <button class="btn btn--accent btn--lg" type="submit">Открыть WhatsApp <span aria-hidden="true">→</span></button>
+      <p class="form__error micro" role="alert" aria-live="polite"></p>
+      <p class="form__hint micro">Данные никуда не отправляются: сайт только готовит сообщение в WhatsApp.</p>
+    </div>
+  </form>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div class="footer__col"><p class="micro muted">Адрес</p><a href="https://maps.google.com/?q=Алматы,+проспект+Абая+52" target="_blank" rel="noopener">Алматы, пр. Абая 52</a></div>
+    <div class="footer__col"><p class="micro muted">Часы</p><p>Ежедневно 10:00–22:00</p></div>
+    <div class="footer__col"><p class="micro muted">Телефон</p><a class="mono" href="tel:+77000000000">+7 700 000 00 00</a></div>
+    <div class="footer__col"><p class="micro muted">Instagram</p><a href="https://instagram.com/nord.barbershop" target="_blank" rel="noopener">@nord.barbershop</a></div>
+  </div>
+  <p class="footer__wordmark wordmark" aria-label="NORD*"><span aria-hidden="true">NORD<span class="star">*</span></span></p>
+  <div class="footer__base micro">
+    <span>© 2026 NORD*</span>
+    <span>Демо-проект для портфолио. Адрес, телефон, имена и цены вымышлены.</span>
+    <span>Фото: Unsplash</span>
+    <span class="mono">43.2389° N — 76.8897° E</span>
+    <a href="#top">Наверх ↑</a>
+  </div>
+</footer>
+<a class="sticky-cta btn btn--accent btn--lg" href="#booking" data-book>Записаться <span aria-hidden="true">→</span></a>
+  </body>
+</html>
